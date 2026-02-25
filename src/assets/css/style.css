@@ -1,0 +1,344 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+
+ul {
+    list-style: none;
+}
+
+header {
+    ul {
+        list-style: none;
+    }
+
+    .all {
+        .location {
+            .loc-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #064C50;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .loc-text {
+                small {
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        input {
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+        }
+
+        .all-icons {
+            display: flex;
+
+            .user {
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #BDEB69;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .heart {
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid grey;
+            }
+
+            .arrow {
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid grey;
+            }
+
+            .basket {
+                width: 45px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid grey;
+            }
+
+            .price {
+                small {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .best-seller {
+        p {
+            font-size: 20px;
+        }
+
+        .red {
+            background-color: #ff4757;
+            color: white;
+            width: 50px;
+            height: 30px;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+    }
+}
+
+
+
+
+.card {
+    width: 270px;
+
+    i {
+        font-size: 10px;
+        color: rgb(255, 208, 0);
+    }
+
+    small {
+        color: grey;
+        margin-left: 10px;
+    }
+
+    img {
+        margin-left: 30px;
+        width: 200px;
+        height: 160px;
+        object-fit: contain;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .prices {
+        display: flex;
+
+        .newprice {
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+
+        .oldprice {
+            color: grey;
+            text-decoration: line-through;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+    }
+}
+
+
+.write-us {
+    width: 640px;
+    height: 80vh;
+    border: 1px solid rgb(222, 219, 219);
+    background-color: #F3F4F6;
+    border-radius: 10px;
+    margin-left: 30px;
+
+    h3 {
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    p {
+        margin-left: 30px;
+    }
+
+    input {
+        margin-left: 30px;
+    }
+
+    label {
+        margin-left: 30px;
+
+    }
+
+    textarea {
+        margin-left: 30px;
+    }
+
+    button {
+        margin-left: 30px;
+        background-color: #064C50;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+    }
+}
+
+
+.footer-one {
+    .tel {
+        .phone {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #E6EDED;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h5 {
+            margin-left: 20px;
+            font-size: 30px;
+            color: #064C50;
+
+            small {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+
+.footer-two {
+    display: flex;
+    justify-content: space-between;
+
+    h5 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .subscribe {
+        button {
+            height: 40px;
+            color: white;
+            background-color: #064C50;
+            border-radius: 10px;
+
+        }
+
+        small {
+            font-size: 13px;
+        }
+    }
+}
+
+
+.light {
+    background-color: black;
+    color: white;
+}
+
+.dark {
+    background-color: white;
+    color: black;
+}
+
+
+.add {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    margin-left: 10px;
+
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px !important;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: blue;
+    margin-left: 10px;
+}
+
+.basket {
+    margin-right: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #BDEB69;
+    margin-bottom: 10px;
+
+}
+
+
+.allclear{
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    width: 70px !important;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #BDEB69;
+    margin-bottom: 10px;
+}
+.delete{
+    
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: red;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus{
+    
+    width: 30px !important;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: darkgray;
+    margin-bottom: 10px;
+   
+}
