@@ -12,12 +12,12 @@ const Login = () => {
 
   const emailRef = useRef();
   const passwordRef = useRef();
-
   const navigate = useNavigate()
 
   const checkUser = (e) => {
     e.preventDefault()
-    if (emailRef.current.value == adminUser.email && passwordRef.current.value == adminUser.password) {
+    const savedUser = JSON.parse(localStorage.getItem('registeredUser'));
+    if (savedUser && emailRef.current.value == savedUser.email && passwordRef.current.value == savedUser.password) {
        Swal.fire({
                 title: "Login successfull",
                 icon: "success",

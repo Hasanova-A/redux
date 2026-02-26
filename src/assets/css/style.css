@@ -303,7 +303,7 @@ header {
 }
 
 
-.allclear{
+.allclear {
     margin-right: 20px;
     font-size: 25px;
     cursor: pointer;
@@ -315,8 +315,9 @@ header {
     background-color: #BDEB69;
     margin-bottom: 10px;
 }
-.delete{
-    
+
+.delete {
+
     font-size: 20px;
     cursor: pointer;
     width: 40px !important;
@@ -331,8 +332,7 @@ header {
     justify-content: center;
 }
 
-.plus{
-    
+.plus {
     width: 30px !important;
     height: 30px;
     border-radius: 10px;
@@ -340,5 +340,120 @@ header {
     border: none;
     background-color: darkgray;
     margin-bottom: 10px;
-   
+}
+
+.delete-btn {
+
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: red;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.edit-btn {
+
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: #BDEB69;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    /* From https://css.glass */
+    background: rgba(183, 179, 179, 0.72);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(183, 179, 179, 0.3);
+
+    thead {
+        background: rgba(183, 179, 179, 0.72);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 1px solid rgba(183, 179, 179, 0.3);
+
+        tr {
+            th {
+                border: none;
+                /* From https://css.glass */
+
+            }
+        }
+    }
+
+    tbody {
+        tr{
+            border: 1px solid rgb(255, 255, 255);
+              /* From https://css.glass */
+        background: rgba(183, 179, 179, 0.72);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 1px solid rgba(183, 179, 179, 0.3);
+            td{
+                
+            }
+        }
+    }
+}
+
+
+.add-btn{
+   width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color:darkgrey;
+    border: none;
+    font-size: 30px;
+}
+
+.pro-btn{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color:darkgray;
+    border: none;
+    font-size: 60px;
+}
+
+.cat-btn{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color:#BDEB69;
+    border: none;
+    font-size: 60px;
 }

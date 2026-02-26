@@ -1,8 +1,9 @@
-const initialState = [];
+import { product as staticProducts } from "../../information/static";
 
 
+const customProducts = JSON.parse(localStorage.getItem("customProducts")) || [];
 
-
+const initialState = [...staticProducts, ...customProducts];
 
 export const productReducer = (state = initialState, action) => {
 
@@ -10,23 +11,30 @@ export const productReducer = (state = initialState, action) => {
 
     case "CREATE_PRODUCT":
 
-       const createdState = [...state, action.product];
+      const newCustomProducts = [...JSON.parse(localStorage.getItem("customProducts") || "[]"), action.product];
+      localStorage.setItem("customProducts", JSON.stringify(newCustomProducts));
 
-       localStorage.setItem("products", JSON.stringify(createdState))
-
-       return createdState;
+      return [...state, action.product];
 
 
+    case "EDIT_PRODUCT":
+      return state.map(item=>{
+        if(item.id == action.id){
+          return {...item,...action.update}
+        }else{
+          return item
+        }
+      })
 
 
 
     case "DELETE_PRODUCT":
 
-       const deletedState = state.filter(p => p.id !== action.id);
+      const deletedCustomProducts = JSON.parse(localStorage.getItem("customProducts") || "[]").filter(p => p.id !== action.id)
 
-      localStorage.setItem("products", JSON.stringify(deletedState))
+      localStorage.setItem("customProducts", JSON.stringify(deletedCustomProducts));
 
-      return deletedState
+      return state.filter(p => p.id !== action.id);
 
 
 

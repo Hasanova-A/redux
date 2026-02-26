@@ -15,6 +15,9 @@ import ProductAdd from './pages/admin/product/ProductAdd'
 import Login from './pages/client/auth/Login'
 import CategoryList from './pages/admin/category/CategoryList'
 import CategoryAdd from './pages/admin/category/CategoryAdd'
+import Register from './pages/client/auth/Register'
+import ProductEdit from './pages/admin/product/ProductEdit'
+import CategoryEdit from './pages/admin/category/CategoryEdit'
 
 const Router = () => {
   const [mode] = useContext(ModeContext);
@@ -33,8 +36,12 @@ const Router = () => {
           <Route path='/dashboard/product' element={<ProductList />}></Route>
           <Route path='/dashboard/product/add' element={<ProductAdd />}></Route>
           <Route path='/dashboard/category' element={<CategoryList />}></Route>
+          <Route path='/dashboard/product/edit/:id' element={<CategoryEdit />}></Route>
           <Route path='/dashboard/category/add' element={<CategoryAdd />}></Route>
+          <Route path='/dashboard/product/edit/:id' element={<ProductEdit />}></Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/register' element={<Register />}></Route>
           <Route path='/basket' element={<Basket/>} />
         </Routes>
         <Footer />

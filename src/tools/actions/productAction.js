@@ -1,4 +1,4 @@
-export const productAddAction = ({ id, title,image, price, category, oldPrice }) => ({
+export const productAddAction = ({ id, title,image, price, category, oldPrice, rating }) => ({
     type: "CREATE_PRODUCT",
     product: {
         id, 
@@ -6,11 +6,15 @@ export const productAddAction = ({ id, title,image, price, category, oldPrice })
         image,
         price,
         category,
-        oldPrice
+        oldPrice,
+        rating
     }
 });
 
-
+export const productEdit =(id,update)=>({
+    type: "EDIT_PRODUCT",
+    id,update
+});
 
 export const productDelete = (id) => ({
     type: "DELETE_PRODUCT",

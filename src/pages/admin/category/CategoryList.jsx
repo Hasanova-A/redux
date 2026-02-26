@@ -25,7 +25,7 @@ const CategoryList = () => {
               <tr>
                 <th scope="row" key={count}>{count + 1}</th>
                 <td>{item.title}</td>
-                <td><Link className='btn btn-warning'>Edit</Link></td>
+                <td><Link className='btn btn-warning' to={`/dashboard/category/edit/${item.id}`}>Edit</Link></td>
                 <td><button className='btn btn-danger' onClick={() => { dispatch(categoryDelete(item.id)) }}>X</button></td>
               </tr>
             ))}
